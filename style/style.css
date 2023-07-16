@@ -81,6 +81,23 @@ body{
     padding-bottom: 30px;
 }
 
+/* Our feature section is here  */
+.feature-container{
+    display: flex;
+    align-items: center;
+}
+.content-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+.blog-img{
+    width: 100%;
+}
+.feature-content{
+    flex: 1;
+}
+/* Our featured section is ending here  */
 /* media query devices starting here */
 @media screen and (max-width: 576px) {
     .navbar{
