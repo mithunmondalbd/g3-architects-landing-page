@@ -1,0 +1,78 @@
+/* work sans font added from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.navbar{
+    min-height: 70px;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-title{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: tomato;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar li{
+    list-style: none;
+    margin-right: 30px;
+}
+.navbar li a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: skyblue;
+}
+.banner-section{
+    height: 65vh;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-title{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 800;
+    color: tomato;
+}
+.banner-desc{
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 60%;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #000000;
+}
+.btn-primary{
+    background-color: orange;
+    color: #fff;
+    padding: 12px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 576px) {
+    .navbar{
+        flex-direction: column;
+    }
+}
