@@ -204,6 +204,103 @@ body{
     line-height: 22px;
 }
 
+/* Some parts start here */
+.some-parts{
+width: 90%;
+margin: 0px auto;
+text-align: center;
+padding-bottom: 30px;
+}
+.parts-text{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 70px;
+    color: salmon;
+}
+.parts-desc{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:rgb(185, 114, 28);
+    line-height: 25px;
+    width: 60%;
+    margin: auto;
+}
+.skills-projects{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.projects-file{
+    border: 1px solid tomato;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 1.8rem 1.2rem;
+}
+.skills-img{
+    width: 50px;
+    height: 50px;
+}
+.number{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+    color: tomato;
+}
+.files-desc{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 30px;
+}
+.our-sponser{
+    width: 90%;
+    margin: 30px auto;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.sponsor-title{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 70px;
+    color: tomato;
+}
+.sponsors-description{
+    /* border: 1px solid green; */
+    /* width: 50%; */
+    margin: auto;
+    line-height: 25px;
+    margin-bottom: 30px;
+    color: steelblue;
+    font-weight: 500;
+}
+.sponsors-card{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+.image-card{
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    width: 50%;
+}
+.footer{
+    height: 10vh;
+    background-color: tomato;
+    color: slategray;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
 /* media query devices starting here */
 @media screen and (max-width: 576px) {
     .navbar, .love-enjoy-container{
@@ -216,6 +313,14 @@ body{
         grid-template-columns: 1fr;
         width: 100%;
     }
+    .parts-desc{
+        width: 100%;
+        text-align: left;
+    } 
+    .skills-projects, .sponsors-card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
 }
 @media only screen and (min-width: 577px) and (max-width: 992px){
     .navbar, .love-enjoy-container{
